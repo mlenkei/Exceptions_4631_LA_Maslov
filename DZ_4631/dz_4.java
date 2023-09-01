@@ -2,6 +2,8 @@
 //  когда пользователь вводит пустую строку.
 //  Пользователю должно показаться сообщение, 
 // что пустые строки вводить нельзя.
+package DZ_4631;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

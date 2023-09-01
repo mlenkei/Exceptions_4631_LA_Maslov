@@ -1,4 +1,4 @@
-// Задание 3
+// Задание 3 Дан следующий код, исправьте его там, где требуется
 
 // public static void main(String[] args) throws Exception {
 //    try {
@@ -19,6 +19,7 @@
 // public static void printSum(Integer a, Integer b) throws FileNotFoundException {
 //    System.out.println(a + b);
 // }
+package DZ_4631;
 
 import java.io.FileNotFoundException;
 
@@ -30,13 +31,15 @@ public class dz_3 {
             System.out.println(a / b);
             printSum(23, 234);
             int[] abc = {1, 2};
-            abc[3] = 9;
+            abc[2] = 9;
+        // } catch (Exception ex) {
+        //     System.out.println("Что-то пошло не так...");    
         } catch (NullPointerException ex) {
             System.out.println("Указатель не может указывать на null!");
         } catch (IndexOutOfBoundsException ex) {
             System.out.println("Массив выходит за пределы своего размера!");
-        } catch (Throwable ex) {
-            System.out.println("Что-то пошло не так...");
+        }catch (ArithmeticException ex) {
+            System.out.println("");
         }
     }
 
